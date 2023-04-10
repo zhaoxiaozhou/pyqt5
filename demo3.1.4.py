@@ -277,7 +277,6 @@ if __name__ == '__main__':
     splash.showMessage('Welcome to Use This PyQt5-Made Notebook~',
                        Qt.AlignBottom | Qt.AlignCenter, Qt.white)
     time.sleep(10)
-
     demo = Demo()
     demo.show()
     splash.finish(demo)
