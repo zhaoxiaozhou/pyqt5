@@ -36,7 +36,7 @@ class Demo(QWidget):
     def widget_init(self):
         self.time_label.setText('--/--')
         self.volume_slider.setRange(0, 100)
-        self.volume_slider.setValue(100)
+        self.volume_slider.setValue(50)
         self.volume_slider.setOrientation(Qt.Horizontal)
         self.progress_slider.setEnabled(False)
         self.progress_slider.setOrientation(Qt.Horizontal)
@@ -69,6 +69,7 @@ class Demo(QWidget):
         self.all_v_layout.addLayout(self.h1_layout)
         self.all_v_layout.addLayout(self.h2_layout)
         self.all_v_layout.addWidget(self.list_widget)
+        # 下面代码固定了窗口的尺寸
         self.all_v_layout.setSizeConstraint(QVBoxLayout.SetFixedSize)
 
         self.setLayout(self.all_v_layout)
